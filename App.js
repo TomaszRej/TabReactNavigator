@@ -59,12 +59,16 @@ const AppNavigator = createBottomTabNavigator({
     //router config
     initialRouteName: 'Settings',
     order: ['Settings', 'Home'],
+    // default navigation style for all nav
+    defaultNavigationOptions:{
+        tabBarVisible: true,
+    },
 
     //style tab bars
     tabBarOptions: {
         activeTintColor: 'tomato',
         inactiveTintColor: 'gray',
-        tabBarPosition: 'Top'
+
     },
 });
 const AppContainer = createAppContainer(AppNavigator);
